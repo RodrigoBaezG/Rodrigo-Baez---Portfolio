@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible' content='IE=edge">
+    <title>Rodrigo Baez Garcia | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\main.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\fonts.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\utils.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\sections.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\header.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\nav.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\portfolio.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\skillset.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\experience.css" type="text/css">
+    <link rel="stylesheet" href="assets\css\contact.css" type="text/css">
+    
+</head>
+
+<body>
+    <header>
+        <img class="circle" alt="large logo" src="assets\img\logos\large.png" />
+        <h1>Rodrigo Baez Garcia</h1>
+        <hr />
+        <h2>Software developer</h2>
+        <video autoplay muted loop>
+            <source src="assets\video\hero.mp4" />
+        </video>
+    </header>
+    <nav id="navbar" class="">
+        <div>
+            <a href="./">
+                <img class="circle" alt="small logo" src="assets\img\logos\small.png" />
+                <span>Rodrigo Baez Garcia -<small> Software developer</small></span>
+            </a>
+            <button id="burger">≡</button>
+        </div>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skillset">Skillset</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="portfolio">
+            <h3>Portfolio</h3>
+            <hr />
+            <div>
+                <button>
+                    <img src="assets\img\portfolio\1.png" />
+                    <h4>Fleet Management Sistem</h4>
+                </button>
+                <button>
+                    <img src="assets\img\portfolio\2.png" />
+                    <h4>Nintendo DIsnet Art Academy</h4>
+                </button>
+                <button>
+                    <img src="assets\img\portfolio\3.png" />
+                    <h4>Fridge Binge Games</h4>
+                </button>
+                <button></button>
+            </div>
+        </section>
+        <section id="skillset" class="even">
+            <h3>Skillset</h3>
+            <hr />
+            <div>
+                <div>
+                    <img src="assets\img\skillset\html.svg" />
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\css.svg" />
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\js.svg" />
+                    <span class="tooltip">JS</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\git.svg" />
+                    <span class="tooltip">GIT</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\npm.svg" />
+                    <span class="tooltip">NPM</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\bash.svg" />
+                    <span class="tooltip">BASH</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\node.svg" />
+                    <span class="tooltip">NODE</span>
+                </div>
+                <div>
+                    <img src="assets\img\skillset\react.svg" />
+                    <span class="tooltip">REACT</span>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h3>Experience</h3>
+            <hr />
+            <div>
+                <a>
+                    <img src="assets\img\experience\1.svg" />
+                    <h4>Nintengo</h4>
+                </a>
+                <a>
+                    <img src="assets\img\experience\1.svg" />
+                    <h4>Google</h4>
+                </a>
+                <a>
+                    <img src="assets\img\experience\1.svg" />
+                    <h4>Fresh</h4>
+                </a>
+                <a>
+                    <img src="assets\img\experience\1.svg" />
+                    <h4>Amazon</h4>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="even">
+            <h3>Contact</h3>
+            <hr />
+            <form action="" method="post">
+                <label>
+                    Your email:
+                    <input type="email" name="replyto">
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+            <nav id="social-media">
+                <a href="http://www.linkedin.com">
+                    <img id="linkedin" src="assets\img\social\linkedin.png" />
+                </a>
+                <a href="http://www.github.com">
+                    <img id="github" src="assets\img\social\github.png" />
+                </a>
+                <a href="http://www.programadorx.com">
+                    <img id="youtube" src="assets\img\social\youtube.png" />
+                </a>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <small>Developed and designed by Rodrigo Báez García. ©2024. All rights reserved</small>
+    </footer>
+</body>
+
+<script src="assets\js\main2.js"></script>
+<script src="assets\js\fixed2.js"></script>
+</html>
