@@ -1,0 +1,25 @@
+{
+  "name": "rodrigobaez-portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoBaezG/Rodrigo-Baez---Portfolio.git"
+  },
+  "author": "Rodrigo Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoBaezG/Rodrigo-Baez---Portfolio/issues"
+  },
+  "homepage": "https://github.com/RodrigoBaezG/Rodrigo-Baez---Portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "eins-modal": "^2.2.2",
+    "micromodal": "^0.6.1",
+    "normalize.css": "^8.0.1"
+  }
+}

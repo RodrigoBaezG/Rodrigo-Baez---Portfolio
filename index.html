@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible' content='IE=edge">
     <title>Rodrigo Baez Garcia | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="node_modules/micromodal/dist/micromodal.css" type="text/css">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Serif&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets\css\main.css" type="text/css">
     <link rel="stylesheet" href="assets\css\fonts.css" type="text/css">
     <link rel="stylesheet" href="assets\css\utils.css" type="text/css">
@@ -108,9 +112,33 @@
             <h3>Experience</h3>
             <hr />
             <div>
-                <a>
+
+                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                            <header class="modal__header">
+                                <h2 class="modal__title" id="modal-1-title">
+                                    My first project
+                                </h2>
+                                <button class="modal__close" aria-label="Close modal" data-custom-close></button>
+                            </header>
+                            <main class="modal__content" id="modal-1-content">
+                                <p>
+                                    Try hitting the <code>tab</code> key and notice how the focus stays within the modal
+                                    itself. Also, <code>esc</code> to close modal.
+                                </p>
+                            </main>
+                            <footer class="modal__footer">
+                                <button class="modal__btn" data-custom-close
+                                    aria-label="Close this dialog window">Close</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <a data-custom-open="modal-1">
                     <img src="assets\img\experience\1.svg" />
-                    <h4>Nintengo</h4>
+                    <h4>Nintendo</h4>
                 </a>
                 <a>
                     <img src="assets\img\experience\1.svg" />
@@ -156,8 +184,12 @@
     <footer>
         <small>Developed and designed by Rodrigo Báez García. ©2024. All rights reserved</small>
     </footer>
+    <script src="node_modules/micromodal/dist/micromodal.min.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets\js\main2.js"></script>
+    <script src="assets\js\fixed2.js"></script>
 </body>
 
-<script src="assets\js\main2.js"></script>
-<script src="assets\js\fixed2.js"></script>
+
+
 </html>
