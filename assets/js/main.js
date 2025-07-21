@@ -1,9 +1,9 @@
 (function () {
-    let navbar = document.querySelector('#navbar');
-    let hamburger = document.querySelector('#hamburger');
-    hamburger.addEventListener('click', () => {
-        navbar.classList.toggle('open');
-    });
-})()
+    const nav = document.getElementById('navbar');
+    const button = document.getElementById('burger');
 
+    button.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
+})();
 
