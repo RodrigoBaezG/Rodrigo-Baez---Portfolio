@@ -3,5 +3,5 @@ import './assets/js/main.js';
 import './assets/js/modal.js';
 import './node_modules/micromodal/dist/micromodal.min.js';
 import './assets/css/index.css';
-import 'micromodal/dist/micromodal.css';
+import './assets/css/micromodal.css';
 import './node_modules/normalize.css/normalize.css';
