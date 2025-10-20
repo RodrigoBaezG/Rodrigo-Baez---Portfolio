@@ -4,7 +4,7 @@ form {
 form label {
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 input,
@@ -17,7 +17,8 @@ textarea:focus {
     background-color: rgba(0,0,0,0.1);
     box-shadow: none;
     cursor: pointer;
-    margin: 1rem 0 2rem;
+    margin: 2rem 0 2rem;
+    border-radius: 20px;
 }
 
 
