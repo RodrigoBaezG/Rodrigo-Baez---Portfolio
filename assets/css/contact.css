@@ -13,13 +13,13 @@ textarea:focus {
     width: 100%;
     padding: 1rem;
     color: var(--black);
-    border: none;
     background-color: rgba(0,0,0,0.1);
     box-shadow: none;
     cursor: pointer;
-    margin: 2rem 0 2rem;
     border-radius: 20px;
+    outline: none;
 }
+
 
 
 textarea {
