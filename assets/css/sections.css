@@ -3,30 +3,150 @@ html {
 }
 
 section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
-#navbar, section.even {
-    background: linear-gradient(var(--primary),var(--primary-dark));
+#navbar,
+section.even {
+    background: linear-gradient(var(--primary), var(--primary-dark));
 }
 
-footer {
-    background: linear-gradient(var(--black), var(--black2));
-    padding: 2rem 0;
-}
-
+/* ── HR decorativo ── */
 hr {
     height: 0.1rem;
     max-width: 100%;
     border: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0,0,0,0), var(--primary), rgba(0,0,0,0));
 }
 
 section.even hr {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0,0,0,0), var(--white), rgba(0,0,0,0));
 }
 
 section hr {
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* ── Section titles con línea de acento ── */
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+section.even .section-title::after {
+    background: var(--white);
+}
+
+/* ── Scroll animations ── */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delay for grid children */
+.portfolio-grid .animate-on-scroll:nth-child(2) { transition-delay: 0.08s; }
+.portfolio-grid .animate-on-scroll:nth-child(3) { transition-delay: 0.16s; }
+.portfolio-grid .animate-on-scroll:nth-child(4) { transition-delay: 0.24s; }
+.portfolio-grid .animate-on-scroll:nth-child(5) { transition-delay: 0.32s; }
+.portfolio-grid .animate-on-scroll:nth-child(6) { transition-delay: 0.40s; }
+
+.skillset-grid .animate-on-scroll:nth-child(2) { transition-delay: 0.06s; }
+.skillset-grid .animate-on-scroll:nth-child(3) { transition-delay: 0.12s; }
+.skillset-grid .animate-on-scroll:nth-child(4) { transition-delay: 0.18s; }
+.skillset-grid .animate-on-scroll:nth-child(5) { transition-delay: 0.24s; }
+.skillset-grid .animate-on-scroll:nth-child(6) { transition-delay: 0.30s; }
+.skillset-grid .animate-on-scroll:nth-child(7) { transition-delay: 0.36s; }
+.skillset-grid .animate-on-scroll:nth-child(8) { transition-delay: 0.42s; }
+
+/* ── Skip link ── */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    background: var(--primary);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    z-index: 9999;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* ── Focus visible global ── */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* ── Footer ── */
+footer {
+    background: linear-gradient(160deg, var(--black) 0%, var(--black2) 100%);
+    padding: 2.5rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--gray2);
+}
+
+.footer-content strong {
+    color: var(--white);
+}
+
+.footer-content small {
+    color: var(--gray3);
+    font-size: 0.8rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--gray2);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
 }

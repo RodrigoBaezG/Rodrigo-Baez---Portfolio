@@ -1,191 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible' content='IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Rodrigo Baez Garcia | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Rodrigo Baez García, software developer specializing in React, Node.js, and JavaScript.">
+    <meta name="author" content="Rodrigo Baez García">
+    <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rodrigo Baez García — Software Developer">
+    <meta property="og:description" content="Portfolio of Rodrigo Baez García, software developer specializing in React, Node.js, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/logos/large.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logos/small.png" type="image/png">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/img/logos/large.png" as="image">
+    <link rel="preload" href="assets/video/hero.mp4" as="video" type="video/mp4">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Serif&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rodrigo Baez García",
+      "jobTitle": "Software Developer",
+      "url": "https://github.com/RodrigoBaezG",
+      "sameAs": [
+        "https://github.com/RodrigoBaezG",
+        "https://www.linkedin.com/in/rodrigo-b%C3%A1ez-garc%C3%ADa-4bb55a271"
+      ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip to main content (accesibilidad) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <img class="circle" alt="large logo" src="assets\img\logos\large.png" />
-        <h1>Rodrigo Baez Garcia</h1>
+        <img class="circle hero-logo" alt="Rodrigo Baez García" src="assets/img/logos/large.png" />
+        <h1 class="hero-name">Rodrigo Baez Garcia</h1>
         <hr />
-        <h2>Software developer</h2>
-        <video autoplay muted loop>
-            <source src="assets\video\hero.mp4" />
+        <h2 class="hero-subtitle">Software developer</h2>
+        <a href="#portfolio" class="hero-cta">View my projects</a>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-arrow">&#8595;</span>
+        </div>
+        <video autoplay muted loop playsinline aria-hidden="true">
+            <source src="assets/video/hero.mp4" type="video/mp4" />
         </video>
     </header>
-    <nav id="navbar" class="">
+
+    <nav id="navbar">
         <div>
-            <a href="./">
-                <img class="circle" alt="small logo" src="assets\img\logos\small.png" />
-                <span>Rodrigo Baez Garcia -<small> Software developer</small></span>
+            <a href="./" aria-label="Rodrigo Baez García — Home">
+                <img class="circle" alt="" src="assets/img/logos/small.png" aria-hidden="true" />
+                <span>Rodrigo Baez Garcia <small>Software developer</small></span>
             </a>
-            <button id="burger">≡</button>
+            <button id="burger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span aria-hidden="true">&#9776;</span>
+            </button>
         </div>
-        <ul>
+        <ul id="nav-menu" role="list">
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skillset">Skillset</a></li>
-            <!-- <li><a href="#experience">Experience</a></li> -->
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <main>
+
+    <main id="main-content">
+
         <section id="portfolio">
-            <h3>Portfolio</h3>
+            <h3 class="section-title">Portfolio</h3>
             <hr />
-            <div>
-                <button onclick="window.open('https://rodrigogoals-app.netlify.app', '_blank')">
-                    <img src="assets\img\portfolio\GoalsApp.png" alt="Preview of Goals App" />
-                    <h4>Goals App (React/Vite/Nodejs/JWT)</h4>
-                </button>
-                <button onclick="window.open('https://react-cv-editor.netlify.app/', '_blank')">
-                    <img src="assets\img\portfolio\cv-editor.png" alt="Preview of CV editor" />
-                    <h4>CV editor (React/Vite)</h4>
-                </button>
-                <button onclick="window.open('https://kukobaezartgallery.netlify.app/', '_blank')">
-                    <img src="assets\img\portfolio\ArtGallery_screenshot.png" alt="Preview of art gallery" />
-                    <h4>My art gallery (Javascript/nodejs)</h4>
-                </button>
-                <button onclick="window.open('https://letbemeditation.netlify.app/', '_blank')">
-                    <img src="assets\img\portfolio\MeditationApp.png" alt="Preview of meditation app" />
-                    <h4>Meditation App (React/Vite)</h4>
-                </button>
-                <button onclick="window.open('https://rodrigobaezg.github.io/Tictactoe/', '_blank')">
-                    <img src="assets\img\portfolio\Tictactoe.png" />
-                    <h4>Tic tac toe game (React)</h4>
-                </button>
-                <button onclick="window.open('https://rodrigobaezg.github.io/Notespad/', '_blank')">
-                    <img src="assets\img\portfolio\notespad_img.png" />
-                    <h4>NotesPad (React/Vite)</h4>
-                </button>
-            </div>
-        </section>
-        <section id="skillset" class="even">
-            <h3>Skillset</h3>
-            <hr />
-            <div>
-                <div>
-                    <img src="assets\img\skillset\html.svg" />
-                    <span class="tooltip">HTML</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\css2.svg" />
-                    <span class="tooltip">CSS</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\js.svg" />
-                    <span class="tooltip">JS</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\react.svg" />
-                    <span class="tooltip">REACT</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\typescript.svg" />
-                    <span class="tooltip">TYPESCRIPT</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\npm.svg" />
-                    <span class="tooltip">NPM</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\nodejs.svg" />
-                    <span class="tooltip">NODE JS</span>
-                </div>
-                <div>
-                    <img src="assets\img\skillset\postgresSql.svg" />
-                    <span class="tooltip">POSTGRES SQL</span>
-                </div>
+            <div class="portfolio-grid">
 
-            </div>
-        </section>
-        <!-- <section id="experience">
-            <h3>Experience</h3>
-            <hr />
-            <div>
-
-                <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                            <header class="modal__header">
-                                <h2 class="modal__title" id="modal-1-title">
-                                    My first project
-                                </h2>
-                                <button class="modal__close" aria-label="Close modal" data-custom-close></button>
-                            </header>
-                            <main class="modal__content" id="modal-1-content">
-                                <p>
-                                    Try hitting the <code>tab</code> key and notice how the focus stays within the modal
-                                    itself. Also, <code>esc</code> to close modal.
-                                </p>
-                            </main>
-                            <footer class="modal__footer">
-                                <button class="modal__btn" data-custom-close
-                                    aria-label="Close this dialog window">Close</button>
-                            </footer>
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://rodrigogoals-app.netlify.app"
+                    aria-label="View Goals App project (opens in new tab)">
+                    <img src="assets/img/portfolio/GoalsApp.png" alt="Goals App screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>Goals App</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">JWT</span>
                         </div>
                     </div>
-                </div>
+                </button>
 
-                <a data-custom-open="modal-1">
-                    <img src="assets\img\experience\1.svg" />
-                    <h4>Nintendo</h4>
-                </a>
-                <a>
-                    <img src="assets\img\experience\1.svg" />
-                    <h4>Google</h4>
-                </a>
-                <a>
-                    <img src="assets\img\experience\1.svg" />
-                    <h4>Fresh</h4>
-                </a>
-                <a>
-                    <img src="assets\img\experience\1.svg" />
-                    <h4>Amazon</h4>
-                </a>
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://react-cv-editor.netlify.app/"
+                    aria-label="View CV Editor project (opens in new tab)">
+                    <img src="assets/img/portfolio/cv-editor.png" alt="CV Editor app screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>CV Editor</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://kukobaezartgallery.netlify.app/"
+                    aria-label="View Art Gallery project (opens in new tab)">
+                    <img src="assets/img/portfolio/ArtGallery_screenshot.png" alt="Art Gallery website screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>Art Gallery</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://letbemeditation.netlify.app/"
+                    aria-label="View Meditation App project (opens in new tab)">
+                    <img src="assets/img/portfolio/MeditationApp.png" alt="Meditation App screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>Meditation App</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://rodrigobaezg.github.io/Tictactoe/"
+                    aria-label="View Tic Tac Toe game project (opens in new tab)">
+                    <img src="assets/img/portfolio/Tictactoe.png" alt="Tic Tac Toe game screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>Tic Tac Toe</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="portfolio-btn animate-on-scroll"
+                    data-url="https://rodrigobaezg.github.io/Notespad/"
+                    aria-label="View NotesPad project (opens in new tab)">
+                    <img src="assets/img/portfolio/notespad_img.png" alt="NotesPad app screenshot" loading="lazy" />
+                    <div class="card-info">
+                        <h4>NotesPad</h4>
+                        <div class="card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                    </div>
+                </button>
+
             </div>
-        </section> -->
-        <section id="contact" class="">
-            <h3>Contact</h3>
+        </section>
+
+        <section id="skillset" class="even">
+            <h3 class="section-title">Skillset</h3>
             <hr />
-            <form name="contact" method="POST" netlify>
-                <label>
-                    Your email:
-                    <input type="email" name="replyto" required>
-                </label>
-                <label>
-                    Message:
-                    <textarea name="message" required></textarea>
-                </label>
-                <button type="submit">Send</button>
+            <div class="skillset-grid">
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/html.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/css2.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">CSS</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/js.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/react.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">React</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/typescript.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">TypeScript</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/npm.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">NPM</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/nodejs.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-item animate-on-scroll">
+                    <img src="assets/img/skillset/postgresSql.svg" alt="" aria-hidden="true" loading="lazy" />
+                    <span class="skill-name">PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 class="section-title">Contact</h3>
+            <hr />
+            <form name="contact" method="POST" netlify id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="replyto" required placeholder="hello@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send message</button>
+                <div id="form-success" class="form-success" aria-live="polite" hidden>
+                    Message sent successfully — I will get back to you soon!
+                </div>
             </form>
-            <nav id="social-media">
-                <a href="http://www.linkedin.com/in/rodrigo-báez-garcía-4bb55a271">
-                    <img id="linkedin" src="assets\img\social\linkedin.png" />
+            <nav id="social-media" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/rodrigo-b%C3%A1ez-garc%C3%ADa-4bb55a271"
+                   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+                    <img id="linkedin" src="assets/img/social/linkedin.png" alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/RodrigoBaezG?tab=repositories">
-                    <img id="github" src="assets\img\social\github.png" />
+                <a href="https://github.com/RodrigoBaezG?tab=repositories"
+                   target="_blank" rel="noopener noreferrer" aria-label="GitHub repositories (opens in new tab)">
+                    <img id="github" src="assets/img/social/github.png" alt="GitHub" />
                 </a>
-                <!-- <a href="http://www.programadorx.com">
-                    <img id="youtube" src="assets\img\social\youtube.png" />
-                </a> -->
             </nav>
         </section>
+
     </main>
+
     <footer>
-        <small>Developed and designed by Rodrigo Báez García. ©2024. All rights reserved</small>
+        <div class="footer-content">
+            <p>Designed and developed by <strong>Rodrigo Báez García</strong></p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="https://github.com/RodrigoBaezG?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rodrigo-b%C3%A1ez-garc%C3%ADa-4bb55a271" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+            <small>&copy; 2026 · All rights reserved</small>
+        </div>
     </footer>
 
 </body>
-
-
 
 </html>

@@ -1,34 +1,27 @@
 (function () {
+    'use strict';
 
-    let navbar = document.querySelector('#navbar');
-    let main = document.querySelector('main');
-    let navbarHeight = navbar.getBoundingClientRect().height;
-    let breakpoint = main.offsetTop - navbarHeight;
-    let windowPos;
+    const navbar = document.querySelector('#navbar');
+    const main = document.querySelector('main');
+    const navbarHeight = navbar.getBoundingClientRect().height;
+    const breakpoint = main.offsetTop - navbarHeight;
     let isFixed = false;
 
-    function updatePos() {
-        windowPos = window.scrollY;
-    }
-
     function onScroll() {
+        const scrolled = window.scrollY >= breakpoint;
 
-        updatePos();
-    
-        if (windowPos >= breakpoint && !isFixed) {
+        if (scrolled && !isFixed) {
             navbar.classList.remove('open');
-
             navbar.classList.add('navbar-fixed');
-            main.style.cssText = "margin-top: " + navbarHeight + 'px;';
+            main.style.marginTop = navbarHeight + 'px';
             isFixed = true;
-    
-        } else if (windowPos < breakpoint && isFixed) {
+        } else if (!scrolled && isFixed) {
             navbar.classList.remove('navbar-fixed');
-            main.style.cssText = "margin-top: " + 0;
+            main.style.marginTop = '0';
             isFixed = false;
         }
     }
 
-    document.addEventListener('scroll', onScroll);
+    document.addEventListener('scroll', onScroll, { passive: true });
 
-})()
+})();

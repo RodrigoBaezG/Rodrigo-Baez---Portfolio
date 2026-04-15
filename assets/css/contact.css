@@ -1,55 +1,110 @@
-form {
-    font-size: 1.2rem;
-}
-form label {
-    display: block;
-    width: 50%;
-    margin: 20px auto;
+/* ── Form layout ── */
+#contact form {
+    width: min(560px, 90%);
+    margin: 0 auto 2.5rem;
+    font-size: 1rem;
 }
 
-input,
-textarea, input:focus,
-textarea:focus {
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--gray3);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
-    padding: 1rem;
+    padding: 0.85rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
     color: var(--black);
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: none;
-    cursor: pointer;
-    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1.5px solid var(--gray2);
+    border-radius: 10px;
     outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-
-textarea {
-    resize: none
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 195, 255, 0.12);
 }
 
-form button {
-    background-color: var(--secondary);
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* ── Submit button ── */
+.submit-btn {
+    background: var(--secondary);
     color: var(--white);
-    margin: 3rem;
     border: none;
-    padding: 1rem;
-    border-radius: 15px;
+    padding: 0.85rem 2.5rem;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    display: block;
+    margin: 0.5rem auto 0;
 }
 
-form button:hover {
-    background-color: var(--secondary-dark)
+.submit-btn:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 138, 32, 0.3);
+}
+
+/* ── Success message ── */
+.form-success {
+    margin-top: 1.25rem;
+    padding: 0.85rem 1.25rem;
+    background: rgba(0, 195, 255, 0.1);
+    border: 1px solid rgba(0, 195, 255, 0.35);
+    border-radius: 10px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ── Social links ── */
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 #social-media img {
-    border-radius: 10rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     background-color: var(--white);
-    transition: all ease .3s;
-    margin: 1rem;
+    object-fit: contain;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #social-media a {
     text-decoration: none;
+}
+
+#social-media a:hover img {
+    transform: scale(1.1);
 }
 
 #linkedin:hover {
@@ -57,9 +112,12 @@ form button:hover {
 }
 
 #github:hover {
-    background-color: black;
-}
-#youtube:hover {
-    background-color: red;
+    background-color: #24292e;
 }
 
+/* ── Mobile ── */
+@media (max-width: 540px) {
+    #contact form {
+        width: 92%;
+    }
+}

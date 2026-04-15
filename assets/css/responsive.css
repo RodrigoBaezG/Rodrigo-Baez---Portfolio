@@ -1,0 +1,47 @@
+/* ════════════════════════════════════════
+   RESPONSIVE — breakpoints globales
+   sm  480px · md  768px · lg  1024px
+   ════════════════════════════════════════ */
+
+/* ── Portfolio: una columna en mobile muy pequeño ── */
+@media (max-width: 420px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem;
+    }
+}
+
+/* ── Portfolio: dos columnas en tablet ── */
+@media (min-width: 600px) and (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ── Navbar: ocultar texto del brand en mobile muy pequeño ── */
+@media (max-width: 360px) {
+    #navbar div a span {
+        display: none;
+    }
+}
+
+/* ── Secciones: menos padding en mobile ── */
+@media (max-width: 600px) {
+    section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    section hr {
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* ── Skillset: ya maneja sus propias columnas en skillset.css ── */
+
+/* ── Formulario ── */
+@media (max-width: 540px) {
+    .submit-btn {
+        width: 100%;
+    }
+}

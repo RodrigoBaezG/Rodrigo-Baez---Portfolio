@@ -1,55 +1,51 @@
-#skillset > div {
+/* ── Grid ── */
+.skillset-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    margin: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+    max-width: 700px;
 }
 
-#skillset img {
-  border-radius: 1rem;
-  max-width: 7rem;
-  cursor: context-menu;
+/* ── Chip ── */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.1rem 0.75rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: default;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
-
-#skillset > div > div {
-  position: relative;
-}
-  
-#skillset span {
-  width: 120px;
-  background-color: rgba(0,0,0,0.75);
-  text-align: center;
-  padding: .5rem 0;
-  border-radius: .5rem;
-  position: absolute;
-  z-index: 1;
-  top: -40px;
-  left: 50%;
-  transform: translate(-60px, 10px);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
+.skill-item:hover {
+    background: rgba(0, 195, 255, 0.12);
+    border-color: var(--primary);
+    transform: scale(1.06);
 }
 
-#skillset > div > div:hover span {
-  opacity: 1;
-  transform: translate(-60px, 0px);
+.skill-item img {
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: contain;
 }
 
-#skillset span:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+.skill-name {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    text-transform: uppercase;
 }
 
-
-
-
-  
-  
+/* ── Responsive: 2 columns on small screens ── */
+@media (max-width: 540px) {
+    .skillset-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1.5rem 2rem;
+    }
+}

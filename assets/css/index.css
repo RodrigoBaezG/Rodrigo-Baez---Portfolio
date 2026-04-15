@@ -1,10 +1,11 @@
-@import './contact.css';
-@import './experience.css';
-@import './fonts.css';
-@import './header.css';
 @import './main.css';
+@import './fonts.css';
+@import './sections.css';
+@import './header.css';
 @import './nav.css';
 @import './portfolio.css';
-@import './sections.css';
 @import './skillset.css';
+@import './contact.css';
+@import './experience.css';
 @import './utils.css';
+@import './responsive.css';
