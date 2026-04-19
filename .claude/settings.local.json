@@ -7,7 +7,13 @@
       "Bash(npm run:*)",
       "WebFetch(domain:simpleicons.org)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "mcp__plugin_playwright_playwright__browser_evaluate"
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(ls *.png)",
+      "Bash(cp GoalsApp_new.png assets/img/portfolio/GoalsApp.png)",
+      "Bash(cp cv-editor_new.png assets/img/portfolio/cv-editor.png)",
+      "Bash(cp ArtGallery_new.png assets/img/portfolio/ArtGallery_screenshot.png)",
+      "Bash(cp MeditationApp_new.png assets/img/portfolio/MeditationApp.png)",
+      "Bash(cp Tictactoe_new.png assets/img/portfolio/Tictactoe.png)"
     ]
   }
 }

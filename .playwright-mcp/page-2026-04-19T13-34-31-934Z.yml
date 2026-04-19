@@ -1,0 +1,74 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "🎯 GoalsApp" [ref=e4] [cursor=pointer]:
+      - /url: /access
+      - generic [ref=e5]: 🎯
+      - generic [ref=e6]: GoalsApp
+  - main [ref=e7]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: 🎯
+        - heading "Build habits, track progress." [level=1] [ref=e14]:
+          - text: Build habits,
+          - text: track progress.
+        - paragraph [ref=e15]: A focused goal tracker that keeps you honest about what you're actually working towards.
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - generic [ref=e18]: ✓
+            - text: Set goals with custom frequency
+          - generic [ref=e19]:
+            - generic [ref=e20]: ✓
+            - text: Track progress with one click
+          - generic [ref=e21]:
+            - generic [ref=e22]: ✓
+            - text: Visual progress per goal
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: 📚
+            - generic [ref=e27]: Read 12 books
+            - generic [ref=e30]: 58%
+          - generic [ref=e31]:
+            - generic [ref=e32]: 🏋️
+            - generic [ref=e34]: Workout 4x per week
+            - generic [ref=e37]: 75%
+          - generic [ref=e38]:
+            - generic [ref=e39]: 💻
+            - generic [ref=e41]: Ship 3 side projects
+            - generic [ref=e44]: 33%
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - heading "Welcome back" [level=2] [ref=e48]
+          - paragraph [ref=e49]:
+            - text: Don't have an account?
+            - link "Sign up" [ref=e50] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e51]:
+          - generic [ref=e52]: 👋
+          - paragraph [ref=e53]:
+            - strong [ref=e54]: Portfolio demo
+            - text: — log in instantly to explore the app.
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - text: Email
+              - textbox "Email" [ref=e58]:
+                - /placeholder: you@example.com
+            - generic [ref=e59]:
+              - text: Password
+              - textbox "Password" [ref=e60]:
+                - /placeholder: ••••••••
+          - generic [ref=e61]:
+            - button "Log in" [ref=e63] [cursor=pointer]
+            - generic [ref=e64]: or
+            - button "⚡ Try Demo — no sign up needed" [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: ⚡
+              - text: Try Demo — no sign up needed
+            - paragraph [ref=e67]:
+              - text: New here?
+              - button "Sign up" [ref=e68] [cursor=pointer]
+  - contentinfo [ref=e69]:
+    - generic [ref=e70]:
+      - text: Built by
+      - link "Rodrigo Báez" [ref=e71] [cursor=pointer]:
+        - /url: https://github.com/Rodrigobaez
+      - text: · GoalsApp © 2025

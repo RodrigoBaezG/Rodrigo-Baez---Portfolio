@@ -1,0 +1,147 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: CV Editor
+        - generic [ref=e8]:
+          - img [ref=e9]
+          - text: Saved
+      - generic [ref=e11]:
+        - button "Reset" [ref=e12]
+        - button "Export PDF" [ref=e13]
+  - generic [ref=e14]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Personal Information" [level=3] [ref=e18]
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - generic [ref=e21]: Full Name
+            - textbox "Full Name" [ref=e22]: Your Name
+          - generic [ref=e23]:
+            - generic [ref=e24]: Job Title
+            - textbox "Job Title Degree / Title" [ref=e25]: "Job Title (e.g: Frontend Developer)"
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Email
+            - textbox "Email" [ref=e29]: email@example.com
+          - generic [ref=e30]:
+            - generic [ref=e31]: Phone
+            - textbox "Phone" [ref=e32]: +34 123 456 789
+          - generic [ref=e33]:
+            - generic [ref=e34]: LinkedIn / Web
+            - textbox "LinkedIn / Web" [ref=e35]: linkedin.com/in/tuperfil
+        - generic [ref=e36]:
+          - generic [ref=e37]: Professional Summary
+          - textbox "Professional Summary" [ref=e38]: I am an enthusiastic software developer passionate about React and building functional and attractive user interfaces. I am looking for my first professional role.
+      - generic [ref=e39]:
+        - heading "Work Experience" [level=3] [ref=e40]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: "Portfolio Project: CV Editor"
+            - paragraph [ref=e46]: Personal · 2025
+          - generic [ref=e47]:
+            - button [ref=e48]:
+              - img [ref=e49]
+            - button [ref=e51]:
+              - img [ref=e52]
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: Add Experience
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Position
+              - textbox "Position" [ref=e59]
+            - generic [ref=e60]:
+              - generic [ref=e61]: Company
+              - textbox "Company" [ref=e62]
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Dates (e.g: 2020 – 2023)"
+            - 'textbox "Dates (e.g: 2020 – 2023) Dates" [ref=e65]'
+          - generic [ref=e66]:
+            - generic [ref=e67]: Description
+            - textbox "Description Description" [ref=e68]
+          - button "Add" [ref=e70]:
+            - img [ref=e71]
+            - text: Add
+      - generic [ref=e73]:
+        - heading "Education" [level=3] [ref=e74]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Bachelor of Computer Science
+            - paragraph [ref=e80]: Technical University · 2021 - 2025
+          - generic [ref=e81]:
+            - button [ref=e82]:
+              - img [ref=e83]
+            - button [ref=e85]:
+              - img [ref=e86]
+        - generic [ref=e88]:
+          - paragraph [ref=e89]: Add Education
+          - generic [ref=e90]:
+            - generic [ref=e91]: Degree / Title
+            - textbox [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e94]: Institution
+            - textbox "Institution" [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]: Dates
+            - textbox [ref=e98]
+          - button "Add" [ref=e100]:
+            - img [ref=e101]
+            - text: Add
+      - generic [ref=e103]:
+        - heading "Skills" [level=3] [ref=e104]
+        - generic [ref=e105]:
+          - generic [ref=e106]: List your skills separated by commas
+          - textbox "List your skills separated by commas" [ref=e107]: React, JavaScript (ES6+), HTML, CSS/Tailwind, Git, APIs REST
+      - generic [ref=e108]:
+        - heading "Additional" [level=3] [ref=e109]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - paragraph [ref=e114]: Languages
+            - paragraph [ref=e115]: English (C1), Spanish (Native)
+          - generic [ref=e116]:
+            - button [ref=e117]:
+              - img [ref=e118]
+            - button [ref=e120]:
+              - img [ref=e121]
+        - generic [ref=e123]:
+          - paragraph [ref=e124]: Add Entry
+          - generic [ref=e125]:
+            - generic [ref=e126]: "Category (e.g: Languages, Certifications)"
+            - 'textbox "Category (e.g: Languages, Certifications)" [ref=e127]'
+          - generic [ref=e128]:
+            - generic [ref=e129]: Description
+            - textbox [ref=e130]
+          - button "Add" [ref=e132]:
+            - img [ref=e133]
+            - text: Add
+    - generic [ref=e137]:
+      - banner [ref=e138]:
+        - heading "Your Name" [level=1] [ref=e139]
+        - paragraph [ref=e140]: "Job Title (e.g: Frontend Developer)"
+        - generic [ref=e141]:
+          - generic [ref=e142]: email@example.com
+          - generic [ref=e143]: +34 123 456 789
+          - generic [ref=e144]: linkedin.com/in/tuperfil
+      - separator [ref=e145]
+      - paragraph [ref=e147]: I am an enthusiastic software developer passionate about React and building functional and attractive user interfaces. I am looking for my first professional role.
+      - generic [ref=e148]:
+        - heading "Experience" [level=3] [ref=e149]
+        - generic [ref=e150]:
+          - generic [ref=e151]:
+            - generic [ref=e152]: "Portfolio Project: CV Editor"
+            - generic [ref=e153]: "2025"
+          - paragraph [ref=e154]: Personal
+          - paragraph [ref=e155]: Design and implementation of a full-stack application with React and useReducer. Demonstration of complex state management and PDF export.
+      - generic [ref=e156]:
+        - heading "Education" [level=3] [ref=e157]
+        - generic [ref=e158]:
+          - generic [ref=e159]: Bachelor of Computer ScienceTechnical University
+          - generic [ref=e160]: 2021 - 2025
+      - generic [ref=e161]:
+        - heading "Skills" [level=3] [ref=e162]
+        - paragraph [ref=e163]: React, JavaScript (ES6+), HTML, CSS/Tailwind, Git, APIs REST
+      - generic [ref=e164]:
+        - heading "Additional" [level=3] [ref=e165]
+        - generic [ref=e166]:
+          - generic [ref=e167]: "Languages:"
+          - text: English (C1), Spanish (Native)

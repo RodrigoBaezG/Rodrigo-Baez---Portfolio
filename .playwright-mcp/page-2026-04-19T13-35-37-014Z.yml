@@ -1,0 +1,15 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "Notespad" [level=1] [ref=e6]
+    - text: 📝
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - text: Title
+      - textbox "Title" [ref=e10]
+    - generic [ref=e11]:
+      - text: Description
+      - textbox "Description" [ref=e12]
+    - button "Add note" [ref=e13] [cursor=pointer]
+  - generic [ref=e14]:
+    - heading "Notes history" [level=3] [ref=e15]
+    - paragraph [ref=e17]: There are no notes yet
