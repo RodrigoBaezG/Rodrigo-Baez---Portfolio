@@ -1,0 +1,34 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Letting Be" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e7]:
+        - link "Instrucciones" [ref=e8] [cursor=pointer]:
+          - /url: /instructions
+        - link "Meditar" [ref=e32] [cursor=pointer]:
+          - /url: /new-meditation
+        - link "Historial" [ref=e33] [cursor=pointer]:
+          - /url: /history
+        - button "Salir" [ref=e34] [cursor=pointer]
+        - button "Switch language" [ref=e11]: EN
+  - main [ref=e12]:
+    - generic [ref=e35]:
+      - generic [ref=e37]:
+        - generic [ref=e38]: Meditación consciente
+        - heading "Encontrar paz es posible" [level=1] [ref=e39]:
+          - text: Encontrar paz
+          - emphasis [ref=e40]: es posible
+        - paragraph [ref=e41]: Letting Be es una práctica simple para observar tu mente sin juzgar lo que encuentras. Momento a momento.
+        - generic [ref=e42]:
+          - link "Nueva meditación" [ref=e43] [cursor=pointer]:
+            - /url: /new-meditation
+          - link "Cómo funciona" [ref=e44] [cursor=pointer]:
+            - /url: /instructions
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "¿Para qué meditamos?" [level=2] [ref=e50]
+          - paragraph [ref=e51]: Queremos paz. Reconocemos que no estamos en paz y que no sabemos cómo alcanzarla. Meditar es fortalecer nuestra disposición a entregarnos al momento tal como es.
+        - generic [ref=e52]:
+          - heading "¿Qué busca esta práctica?" [level=2] [ref=e53]
+          - paragraph [ref=e54]: Como no sabemos cómo estar en paz, estamos dispuestos a ser enseñados. Buscamos la realidad. Nos apartamos. Dejamos ser lo que ya es.
