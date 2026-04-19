@@ -1,0 +1,33 @@
+- generic [ref=e2]:
+  - alert [ref=e1]
+  - generic [ref=e27]:
+    - banner [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: P
+        - generic [ref=e31]: Prelegal
+      - generic [ref=e32]:
+        - generic [ref=e33]: demo@prelegal.com
+        - button "My Documents" [ref=e34] [cursor=pointer]
+        - button "Sign out" [ref=e35] [cursor=pointer]
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Legal Document Assistant" [level=1] [ref=e40]
+          - paragraph [ref=e41]: Tell me what document you need and I'll guide you through it.
+        - generic [ref=e44]: "Hi! I'm your legal document assistant. I can help you create any of the following: Mutual NDA, Cloud Service Agreement, Design Partner Agreement, Service Level Agreement, Professional Services Agreement, Data Processing Agreement, Partnership Agreement, Software License Agreement, Pilot Agreement, Business Associate Agreement, or AI Addendum. What document would you like to create today?"
+        - generic [ref=e46]:
+          - textbox "Type your message…" [active] [ref=e47]
+          - button "Send" [disabled] [ref=e48]
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: Live Preview
+          - generic [ref=e53]:
+            - button "Save Document" [ref=e54] [cursor=pointer]
+            - button "↓ Download PDF" [ref=e55] [cursor=pointer]
+        - generic [ref=e57]:
+          - heading "Legal Document" [level=1] [ref=e58]
+          - paragraph [ref=e59]: Common Paper Legal Agreement
+          - paragraph [ref=e60]: Fields will appear here as the AI gathers information from the chat.
+          - paragraph [ref=e62]:
+            - strong [ref=e63]: "Disclaimer:"
+            - text: This document is an AI-generated draft and should be considered a starting point only. It is not legal advice and has not been reviewed by an attorney. Please consult a qualified legal professional before signing or relying on this document.

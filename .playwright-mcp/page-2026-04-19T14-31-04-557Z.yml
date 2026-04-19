@@ -1,0 +1,23 @@
+- generic [ref=e2]:
+  - alert [ref=e1]
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: P
+      - generic [ref=e7]: Prelegal
+    - heading "Create your account" [level=1] [ref=e20]
+    - paragraph [ref=e9]: Start drafting legal documents in minutes
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Email
+        - textbox "you@company.com" [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e15]: Password
+        - textbox "••••••••" [ref=e16]
+        - paragraph [ref=e21]: Minimum 8 characters
+      - generic [ref=e22]:
+        - generic [ref=e23]: Confirm Password
+        - textbox "••••••••" [ref=e24]
+      - button "Create account" [ref=e25] [cursor=pointer]
+    - paragraph [ref=e18]:
+      - text: Already have an account?
+      - button "Sign in" [active] [ref=e26] [cursor=pointer]
