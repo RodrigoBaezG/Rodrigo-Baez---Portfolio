@@ -28,8 +28,8 @@ header video {
     width: clamp(90px, 15vw, 130px);
     height: clamp(90px, 15vw, 130px);
     object-fit: cover;
-    border: 3px solid rgba(0, 195, 255, 0.4);
-    box-shadow: 0 0 30px rgba(0, 195, 255, 0.2);
+    border: 3px solid rgba(122, 162, 247, 0.35);
+    box-shadow: 0 0 30px rgba(122, 162, 247, 0.18);
     margin-bottom: 1.25rem;
     position: relative;
     z-index: 1;
@@ -91,7 +91,7 @@ header hr {
     background: var(--primary);
     color: var(--black);
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 195, 255, 0.35);
+    box-shadow: 0 8px 24px rgba(122, 162, 247, 0.32);
 }
 
 /* ── Scroll indicator ── */

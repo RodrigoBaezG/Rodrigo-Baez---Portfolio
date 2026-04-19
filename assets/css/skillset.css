@@ -23,7 +23,7 @@
 }
 
 .skill-item:hover {
-    background: rgba(0, 195, 255, 0.12);
+    background: rgba(122, 162, 247, 0.1);
     border-color: var(--primary);
     transform: scale(1.06);
 }

@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - img "Rodrigo Baez García" [ref=e4]
+    - heading "Rodrigo Baez Garcia" [level=1] [ref=e5]
+    - separator [ref=e6]
+    - heading "Software developer" [level=2] [ref=e7]
+    - link "View my projects" [ref=e8] [cursor=pointer]:
+      - /url: "#portfolio"
+    - generic [ref=e9]: ↓
+  - navigation [ref=e11]:
+    - generic [ref=e12]:
+      - link "Rodrigo Baez García — Home" [ref=e13] [cursor=pointer]:
+        - /url: ./
+        - img [ref=e14]
+        - generic [ref=e15]: Rodrigo Baez Garcia Software developer
+      - button "Open navigation menu" [ref=e16]: ☰
+    - list [ref=e17]:
+      - listitem [ref=e18]:
+        - link "Portfolio" [ref=e19] [cursor=pointer]:
+          - /url: "#portfolio"
+      - listitem [ref=e20]:
+        - link "Skillset" [ref=e21] [cursor=pointer]:
+          - /url: "#skillset"
+      - listitem [ref=e22]:
+        - link "Contact" [ref=e23] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - heading "Portfolio" [level=3] [ref=e26]
+      - separator [ref=e27]
+      - generic [ref=e28]:
+        - button "View Goals App project (opens in new tab)" [ref=e29]:
+          - img "Goals App screenshot" [ref=e30]
+          - generic [ref=e31]:
+            - heading "Goals App" [level=4] [ref=e32]
+            - generic [ref=e33]: React Vite Node.js JWT
+        - button "View CV Editor project (opens in new tab)" [ref=e34]:
+          - img "CV Editor app screenshot" [ref=e35]
+          - generic [ref=e36]:
+            - heading "CV Editor" [level=4] [ref=e37]
+            - generic [ref=e38]: React Vite
+        - button "View Art Gallery project (opens in new tab)" [ref=e39]:
+          - img "Art Gallery website screenshot" [ref=e40]
+          - generic [ref=e41]:
+            - heading "Art Gallery" [level=4] [ref=e42]
+            - generic [ref=e43]: JavaScript Node.js
+        - button "View Meditation App project (opens in new tab)" [ref=e44]:
+          - img "Meditation App screenshot" [ref=e45]
+          - generic [ref=e46]:
+            - heading "Meditation App" [level=4] [ref=e47]
+            - generic [ref=e48]: React Vite
+        - button "View Tic Tac Toe game project (opens in new tab)" [ref=e49]:
+          - img "Tic Tac Toe game screenshot" [ref=e50]
+          - generic [ref=e51]:
+            - heading "Tic Tac Toe" [level=4] [ref=e52]
+            - generic [ref=e53]: React
+        - button "View NotesPad project (opens in new tab)" [ref=e54]:
+          - img "NotesPad app screenshot" [ref=e55]
+          - generic [ref=e56]:
+            - heading "NotesPad" [level=4] [ref=e57]
+            - generic [ref=e58]: React Vite
+    - generic [ref=e59]:
+      - heading "Skillset" [level=3] [ref=e60]
+      - separator [ref=e61]
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - img [ref=e64]
+          - text: HTML
+        - generic [ref=e65]:
+          - img [ref=e66]
+          - text: CSS
+        - generic [ref=e67]:
+          - img [ref=e68]
+          - text: JavaScript
+        - generic [ref=e69]:
+          - img [ref=e70]
+          - text: React
+        - generic [ref=e71]:
+          - img [ref=e72]
+          - text: TypeScript
+        - generic [ref=e73]:
+          - img [ref=e74]
+          - text: NPM
+        - generic [ref=e75]:
+          - img [ref=e76]
+          - text: Node.js
+        - generic [ref=e77]:
+          - img [ref=e78]
+          - text: PostgreSQL
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - text: Next.js
+        - generic [ref=e81]:
+          - img [ref=e82]
+          - text: Docker
+        - generic [ref=e83]:
+          - img [ref=e84]
+          - text: Claude Code
+    - generic [ref=e85]:
+      - heading "Contact" [level=3] [ref=e86]
+      - separator [ref=e87]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - text: Your email
+          - textbox "Your email" [ref=e90]:
+            - /placeholder: hello@example.com
+        - generic [ref=e91]:
+          - text: Message
+          - textbox "Message" [ref=e92]:
+            - /placeholder: Write your message here...
+        - button "Send message" [ref=e93]
+      - navigation "Social media links" [ref=e94]:
+        - link "LinkedIn profile (opens in new tab)" [ref=e95] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/rodrigo-b%C3%A1ez-garc%C3%ADa-4bb55a271
+          - img "LinkedIn" [ref=e96]
+        - link "GitHub repositories (opens in new tab)" [ref=e97] [cursor=pointer]:
+          - /url: https://github.com/RodrigoBaezG?tab=repositories
+          - img "GitHub" [ref=e98]
+  - contentinfo [ref=e99]:
+    - generic [ref=e100]:
+      - paragraph [ref=e101]:
+        - text: Designed and developed by
+        - strong [ref=e102]: Rodrigo Báez García
+      - navigation "Footer navigation" [ref=e103]:
+        - link "GitHub" [ref=e104] [cursor=pointer]:
+          - /url: https://github.com/RodrigoBaezG?tab=repositories
+        - link "LinkedIn" [ref=e105] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/rodrigo-b%C3%A1ez-garc%C3%ADa-4bb55a271
+      - text: © 2026 · All rights reserved

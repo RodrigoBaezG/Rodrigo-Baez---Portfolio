@@ -18,7 +18,13 @@
     }
 }
 
-/* ── Navbar: ocultar texto del brand en mobile muy pequeño ── */
+/* ── Navbar: ocultar subtitle en mobile, nombre entero en muy pequeño ── */
+@media (max-width: 600px) {
+    #navbar div a small {
+        display: none;
+    }
+}
+
 @media (max-width: 360px) {
     #navbar div a span {
         display: none;

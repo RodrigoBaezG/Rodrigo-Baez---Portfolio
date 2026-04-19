@@ -9,7 +9,7 @@ section {
 
 #navbar,
 section.even {
-    background: linear-gradient(var(--primary), var(--primary-dark));
+    background: linear-gradient(150deg, #111827 0%, #1a2744 100%);
 }
 
 /* ── HR decorativo ── */
