@@ -1,0 +1,42 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - link "Kuko Báez" [ref=e3] [cursor=pointer]:
+      - /url: /
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e7]:
+        - link "Paintings" [ref=e8] [cursor=pointer]:
+          - /url: /gallery?cat=paintings
+      - listitem [ref=e9]:
+        - link "Drawings" [ref=e10] [cursor=pointer]:
+          - /url: /gallery?cat=drawings
+      - listitem [ref=e11]:
+        - link "Digital" [ref=e12] [cursor=pointer]:
+          - /url: /gallery?cat=digital
+      - listitem [ref=e13]:
+        - link "Commissions" [ref=e14] [cursor=pointer]:
+          - /url: /commissions
+      - listitem [ref=e15]:
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: /#socialmedia
+  - banner [ref=e17]:
+    - generic [ref=e18]:
+      - heading "Drawings" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Explore the collection.
+  - main [ref=e21]:
+    - paragraph [ref=e23]: Loading...
+  - generic [ref=e24]:
+    - heading "Interested in my work?" [level=4] [ref=e25]
+    - generic [ref=e26]:
+      - link "Instagram kuko.baez" [ref=e27] [cursor=pointer]:
+        - /url: https://www.instagram.com/kuko.baez/
+        - img "Instagram" [ref=e28]
+        - generic [ref=e29]: kuko.baez
+      - link "rkbaezgarcia@gmail.com" [ref=e30] [cursor=pointer]:
+        - /url: mailto:rkbaezgarcia@gmail.com
+        - img [ref=e31]
+        - generic [ref=e34]: rkbaezgarcia@gmail.com
+  - contentinfo [ref=e35]:
+    - paragraph [ref=e36]: © 2025 Rodrigo Báez. All rights reserved.

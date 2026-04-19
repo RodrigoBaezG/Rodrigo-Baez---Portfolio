@@ -1,0 +1,41 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "🎯 GoalsApp" [ref=e4] [cursor=pointer]:
+      - /url: /list
+      - generic [ref=e5]: 🎯
+      - generic [ref=e6]: GoalsApp
+    - generic [ref=e72]:
+      - link "New goal" [ref=e73] [cursor=pointer]:
+        - /url: /create
+        - text: +
+      - button "Log out" [ref=e74] [cursor=pointer]:
+        - img [ref=e75]
+        - text: Log out
+  - main [ref=e7]:
+    - complementary [ref=e78]:
+      - generic [ref=e79]: Workspace
+      - link "My Goals" [ref=e80] [cursor=pointer]:
+        - /url: /list
+        - img [ref=e82]
+        - generic [ref=e83]: My Goals
+      - link "New Goal" [ref=e84] [cursor=pointer]:
+        - /url: /create
+        - img [ref=e86]
+        - generic [ref=e88]: New Goal
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - heading "My Goals" [level=1] [ref=e92]
+        - link "+ New goal" [ref=e93] [cursor=pointer]:
+          - /url: /create
+      - generic [ref=e94]:
+        - generic [ref=e95]: 🎯
+        - heading "No goals yet" [level=2] [ref=e96]
+        - paragraph [ref=e97]: Start by creating your first goal. Track habits, projects, or anything you want to improve.
+        - link "+ Create my first goal" [ref=e98] [cursor=pointer]:
+          - /url: /create
+  - contentinfo [ref=e69]:
+    - generic [ref=e70]:
+      - text: Built by
+      - link "Rodrigo Báez" [ref=e71] [cursor=pointer]:
+        - /url: https://github.com/Rodrigobaez
+      - text: · GoalsApp © 2025

@@ -1,0 +1,2 @@
+[   42663ms] [LOG] Adding token {token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3N…0NTV9.ZTI0eVwyqsU8Aszcde5l27Y_Ocwo3a8sEi1xVM1Sl90} @ https://rodrigogoals-app.netlify.app/assets/index-B6bi6xrg.js:59
+[   42668ms] [LOG] New state {token: Object, authenticate: true} @ https://rodrigogoals-app.netlify.app/assets/index-B6bi6xrg.js:59

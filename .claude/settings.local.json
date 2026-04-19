@@ -13,7 +13,10 @@
       "Bash(cp cv-editor_new.png assets/img/portfolio/cv-editor.png)",
       "Bash(cp ArtGallery_new.png assets/img/portfolio/ArtGallery_screenshot.png)",
       "Bash(cp MeditationApp_new.png assets/img/portfolio/MeditationApp.png)",
-      "Bash(cp Tictactoe_new.png assets/img/portfolio/Tictactoe.png)"
+      "Bash(cp Tictactoe_new.png assets/img/portfolio/Tictactoe.png)",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_wait_for"
     ]
   }
 }
