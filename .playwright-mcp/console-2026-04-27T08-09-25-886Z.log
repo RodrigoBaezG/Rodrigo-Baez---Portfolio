@@ -1,0 +1,5 @@
+[    1008ms] [WARNING] <link rel=preload> uses an unsupported `as` value @ http://localhost:8080/#portfolio:24
+[    1247ms] [INFO] [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled. @ webpack://rodrigobaez-portfolio/./node_modules/webpack-dev-server/client/modules/logger/index.js?:593
+[    1255ms] [LOG] [HMR] Waiting for update signal from WDS... @ webpack://rodrigobaez-portfolio/./node_modules/webpack/hot/log.js?:38
+[    1262ms] [WARNING] MicroModal: ❗Please specify at least one %c'micromodal-trigger' background-color: #f8f9fa;color: #50596c;font-weight: bold; data attribute. @ webpack://rodrigobaez-portfolio/./node_modules/micromodal/dist/micromodal.min.js?:0
+[    1262ms] [WARNING] %cExample: background-color: #f8f9fa;color: #50596c;font-weight: bold; <a href="#" data-micromodal-trigger="my-modal"></a> @ webpack://rodrigobaez-portfolio/./node_modules/micromodal/dist/micromodal.min.js?:0
