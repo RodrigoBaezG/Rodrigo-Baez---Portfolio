@@ -1,0 +1,54 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Notespad" [level=1] [ref=e7]
+      - generic [ref=e8]: 📝
+    - button "Switch to dark mode" [ref=e9] [cursor=pointer]: 🌙
+  - form "Add note" [ref=e11]:
+    - generic [ref=e12]:
+      - text: Title
+      - textbox "Title" [ref=e13]
+    - generic [ref=e14]:
+      - text: Description
+      - textbox "Description" [ref=e15]
+    - button "Add note" [ref=e17] [cursor=pointer]
+  - searchbox "Search notes" [ref=e19]
+  - region "Notes history" [ref=e20]:
+    - heading "Notes history (6)" [level=3] [ref=e21]
+    - list [ref=e22]:
+      - listitem [ref=e23]:
+        - heading "Reunión con el cliente" [level=3] [ref=e24]
+        - paragraph [ref=e25]: Revisar la propuesta del nuevo dashboard, confirmar deadline y enviar el contrato firmado antes del viernes.
+        - generic [ref=e26]:
+          - 'button "Edit note: Reunión con el cliente" [ref=e27] [cursor=pointer]': ✎
+          - 'button "Delete note: Reunión con el cliente" [ref=e28] [cursor=pointer]': X
+      - listitem [ref=e29]:
+        - heading "Lista de la compra" [level=3] [ref=e30]
+        - paragraph [ref=e31]: Pan integral, café, leche de avena, fruta de temporada y un par de aguacates para la cena del sábado.
+        - generic [ref=e32]:
+          - 'button "Edit note: Lista de la compra" [ref=e33] [cursor=pointer]': ✎
+          - 'button "Delete note: Lista de la compra" [ref=e34] [cursor=pointer]': X
+      - listitem [ref=e35]:
+        - heading "Ideas para el portfolio" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Añadir sección de testimonios, mejorar contraste del modo oscuro y crear una página de case studies con métricas reales.
+        - generic [ref=e38]:
+          - 'button "Edit note: Ideas para el portfolio" [ref=e39] [cursor=pointer]': ✎
+          - 'button "Delete note: Ideas para el portfolio" [ref=e40] [cursor=pointer]': X
+      - listitem [ref=e41]:
+        - heading "Libros pendientes" [level=3] [ref=e42]
+        - paragraph [ref=e43]: Terminar "Atomic Habits", empezar "The Pragmatic Programmer" y revisar el capítulo 4 de "Designing Data-Intensive Applications".
+        - generic [ref=e44]:
+          - 'button "Edit note: Libros pendientes" [ref=e45] [cursor=pointer]': ✎
+          - 'button "Delete note: Libros pendientes" [ref=e46] [cursor=pointer]': X
+      - listitem [ref=e47]:
+        - heading "Plan de entrenamiento" [level=3] [ref=e48]
+        - paragraph [ref=e49]: Lunes piernas, miércoles espalda y bíceps, viernes pecho y tríceps. Cardio 20 min cada sesión y estiramientos finales.
+        - generic [ref=e50]:
+          - 'button "Edit note: Plan de entrenamiento" [ref=e51] [cursor=pointer]': ✎
+          - 'button "Delete note: Plan de entrenamiento" [ref=e52] [cursor=pointer]': X
+      - listitem [ref=e53]:
+        - 'heading "Recordatorio: pagar facturas" [level=3] [ref=e54]'
+        - paragraph [ref=e55]: Internet, electricidad y suscripción anual del dominio. Configurar pago automático para no olvidarlo el próximo mes.
+        - generic [ref=e56]:
+          - 'button "Edit note: Recordatorio: pagar facturas" [ref=e57] [cursor=pointer]': ✎
+          - 'button "Delete note: Recordatorio: pagar facturas" [ref=e58] [cursor=pointer]': X

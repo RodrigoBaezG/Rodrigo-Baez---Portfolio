@@ -1,0 +1,18 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - heading "Notespad" [level=1] [ref=e7]
+      - generic [ref=e8]: 📝
+    - button "Switch to dark mode" [ref=e9] [cursor=pointer]: 🌙
+  - form "Add note" [ref=e11]:
+    - generic [ref=e12]:
+      - text: Title
+      - textbox "Title" [ref=e13]
+    - generic [ref=e14]:
+      - text: Description
+      - textbox "Description" [ref=e15]
+    - button "Add note" [ref=e17] [cursor=pointer]
+  - searchbox "Search notes" [ref=e19]
+  - region "Notes history" [ref=e20]:
+    - heading "Notes history" [level=3] [ref=e21]
+    - paragraph [ref=e22]: There are no notes yet

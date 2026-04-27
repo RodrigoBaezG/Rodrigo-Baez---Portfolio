@@ -28,7 +28,9 @@
       "Bash(docker run *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/api/health)",
       "mcp__plugin_playwright_playwright__browser_close",
-      "Bash(npm start *)"
+      "Bash(npm start *)",
+      "Bash(cp \"C:/Users/Kbaez/Desktop/RodrigoBaez-Portfolio/notespad_preview3.png\" \"C:/Users/Kbaez/Desktop/RodrigoBaez-Portfolio/assets/img/portfolio/notespad_img.png\")",
+      "Bash(rm \"C:/Users/Kbaez/Desktop/RodrigoBaez-Portfolio/notespad_preview.png\" \"C:/Users/Kbaez/Desktop/RodrigoBaez-Portfolio/notespad_preview2.png\" \"C:/Users/Kbaez/Desktop/RodrigoBaez-Portfolio/notespad_preview3.png\")"
     ]
   }
 }
