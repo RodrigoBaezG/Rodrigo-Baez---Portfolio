@@ -1,0 +1,30 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "🎯 GoalsApp" [ref=e4] [cursor=pointer]:
+      - /url: /list
+      - generic [ref=e5]: 🎯
+      - generic [ref=e6]: GoalsApp
+    - generic [ref=e7]:
+      - link "New goal" [ref=e8] [cursor=pointer]:
+        - /url: /create
+        - text: +
+      - button "Log out" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+        - text: Log out
+  - main [ref=e13]:
+    - complementary [ref=e14]:
+      - generic [ref=e15]: Workspace
+      - link "My Goals" [ref=e16] [cursor=pointer]:
+        - /url: /list
+        - img [ref=e18]
+        - generic [ref=e19]: My Goals
+      - link "New Goal" [ref=e20] [cursor=pointer]:
+        - /url: /create
+        - img [ref=e22]
+        - generic [ref=e24]: New Goal
+  - contentinfo [ref=e49]:
+    - generic [ref=e50]:
+      - text: Built by
+      - link "Rodrigo Báez" [ref=e51] [cursor=pointer]:
+        - /url: https://github.com/Rodrigobaez
+      - text: · GoalsApp © 2025

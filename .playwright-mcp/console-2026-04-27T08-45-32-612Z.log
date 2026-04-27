@@ -1,0 +1,5 @@
+[   23253ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api-goalsapp.onrender.com/api/goals:0
+[   23253ms] [WARNING] Token inválido o expirado. Redirigiendo al login... @ https://rodrigogoals-app.netlify.app/assets/index-BZ1NQXoV.js:59
+[   39377ms] [LOG] Removing token @ https://rodrigogoals-app.netlify.app/assets/index-BZ1NQXoV.js:59
+[   47474ms] [LOG] Adding token {token: demo-token} @ https://rodrigogoals-app.netlify.app/assets/index-BZ1NQXoV.js:59
+[   47474ms] [LOG] New state {token: Object, authenticate: true} @ https://rodrigogoals-app.netlify.app/assets/index-BZ1NQXoV.js:59

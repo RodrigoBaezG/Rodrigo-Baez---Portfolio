@@ -1,0 +1,149 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "🎯 GoalsApp" [ref=e4] [cursor=pointer]:
+      - /url: /list
+      - generic [ref=e5]: 🎯
+      - generic [ref=e6]: GoalsApp
+    - generic [ref=e7]:
+      - link "New goal" [ref=e120] [cursor=pointer]:
+        - /url: /create
+        - text: +
+      - button "Log out" [ref=e121] [cursor=pointer]:
+        - img [ref=e122]
+        - text: Log out
+  - main [ref=e13]:
+    - complementary [ref=e125]:
+      - generic [ref=e126]: Workspace
+      - link "My Goals" [ref=e127] [cursor=pointer]:
+        - /url: /list
+        - img [ref=e129]
+        - generic [ref=e130]: My Goals
+      - link "New Goal" [ref=e131] [cursor=pointer]:
+        - /url: /create
+        - img [ref=e133]
+        - generic [ref=e135]: New Goal
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - heading "My Goals" [level=1] [ref=e139]
+          - paragraph [ref=e140]: 7 goals tracked
+        - link "+ New goal" [ref=e141] [cursor=pointer]:
+          - /url: /create
+      - link "📚 Read 12 books this year year 1 event 58 7/12 58% Mark as completed" [ref=e142] [cursor=pointer]:
+        - /url: /list/demo-1
+        - generic [ref=e143]: 📚
+        - generic [ref=e144]:
+          - generic [ref=e145]: Read 12 books this year
+          - generic [ref=e146]:
+            - generic [ref=e147]: year
+            - generic [ref=e148]: 1 event
+          - progressbar [ref=e150]
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - text: "7"
+              - generic [ref=e154]: /12
+            - generic [ref=e155]: 58%
+          - button "Mark as completed" [ref=e156]: ✓
+      - link "🏋️‍♂️ Workout 4x per week week 4 events 75 3/4 75% Mark as completed" [ref=e157] [cursor=pointer]:
+        - /url: /list/demo-2
+        - generic [ref=e158]: 🏋️‍♂️
+        - generic [ref=e159]:
+          - generic [ref=e160]: Workout 4x per week
+          - generic [ref=e161]:
+            - generic [ref=e162]: week
+            - generic [ref=e163]: 4 events
+          - progressbar [ref=e165]
+        - generic [ref=e166]:
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - text: "3"
+              - generic [ref=e169]: /4
+            - generic [ref=e170]: 75%
+          - button "Mark as completed" [ref=e171]: ✓
+      - link "💻 Ship 3 side projects year 1 event 33 1/3 33% Mark as completed" [ref=e172] [cursor=pointer]:
+        - /url: /list/demo-3
+        - generic [ref=e173]: 💻
+        - generic [ref=e174]:
+          - generic [ref=e175]: Ship 3 side projects
+          - generic [ref=e176]:
+            - generic [ref=e177]: year
+            - generic [ref=e178]: 1 event
+          - progressbar [ref=e180]
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - text: "1"
+              - generic [ref=e184]: /3
+            - generic [ref=e185]: 33%
+          - button "Mark as completed" [ref=e186]: ✓
+      - link "🌱 Meditate 10 minutes daily day 1 event 100 1/1 100% Mark as completed" [ref=e187] [cursor=pointer]:
+        - /url: /list/demo-4
+        - generic [ref=e188]: 🌱
+        - generic [ref=e189]:
+          - generic [ref=e190]: Meditate 10 minutes daily
+          - generic [ref=e191]:
+            - generic [ref=e192]: day
+            - generic [ref=e193]: 1 event
+          - progressbar [ref=e195]
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - text: "1"
+              - generic [ref=e199]: /1
+            - generic [ref=e200]: 100%
+          - button "Mark as completed" [ref=e201]: ✓
+      - link "💦 Drink 8 glasses of water day 8 events 63 5/8 63% Mark as completed" [ref=e202] [cursor=pointer]:
+        - /url: /list/demo-5
+        - generic [ref=e203]: 💦
+        - generic [ref=e204]:
+          - generic [ref=e205]: Drink 8 glasses of water
+          - generic [ref=e206]:
+            - generic [ref=e207]: day
+            - generic [ref=e208]: 8 events
+          - progressbar [ref=e210]
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - text: "5"
+              - generic [ref=e214]: /8
+            - generic [ref=e215]: 63%
+          - button "Mark as completed" [ref=e216]: ✓
+      - link "🎵 Practice guitar 3x per week week 3 events 67 2/3 67% Mark as completed" [ref=e217] [cursor=pointer]:
+        - /url: /list/demo-6
+        - generic [ref=e218]: 🎵
+        - generic [ref=e219]:
+          - generic [ref=e220]: Practice guitar 3x per week
+          - generic [ref=e221]:
+            - generic [ref=e222]: week
+            - generic [ref=e223]: 3 events
+          - progressbar [ref=e225]
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - text: "2"
+              - generic [ref=e229]: /3
+            - generic [ref=e230]: 67%
+          - button "Mark as completed" [ref=e231]: ✓
+      - link "✈️ Visit 4 new cities year 1 event 50 2/4 50% Mark as completed" [ref=e232] [cursor=pointer]:
+        - /url: /list/demo-7
+        - generic [ref=e233]: ✈️
+        - generic [ref=e234]:
+          - generic [ref=e235]: Visit 4 new cities
+          - generic [ref=e236]:
+            - generic [ref=e237]: year
+            - generic [ref=e238]: 1 event
+          - progressbar [ref=e240]
+        - generic [ref=e241]:
+          - generic [ref=e242]:
+            - generic [ref=e243]:
+              - text: "2"
+              - generic [ref=e244]: /4
+            - generic [ref=e245]: 50%
+          - button "Mark as completed" [ref=e246]: ✓
+  - contentinfo [ref=e49]:
+    - generic [ref=e50]:
+      - text: Built by
+      - link "Rodrigo Báez" [ref=e51] [cursor=pointer]:
+        - /url: https://github.com/Rodrigobaez
+      - text: · GoalsApp © 2025
