@@ -6,17 +6,14 @@ Live: hosted on Netlify.
 
 ## Featured projects
 
-| Project | Stack |
-|---|---|
-| FinAlly | Next.js, FastAPI, AI, Docker |
-| Prelegal | Next.js, FastAPI, AI, Docker |
-| Kanban Board | Next.js, React, TypeScript, Tailwind |
-| Goals App | React, Vite, Node.js, JWT |
-| Art Gallery | JavaScript, Node.js |
-| Meditation App | React, Vite |
-| CV Editor | React, Vite |
-| NotesPad | React, Vite |
-| Tic Tac Toe | React |
+| Project | Summary | Stack |
+|---|---|---|
+| FinAlly — AI Trading Workstation | Live-streaming trading dashboard with simulated portfolio and LLM chat assistant that can execute trades | Next.js, FastAPI, SSE, AI, Docker |
+| Prelegal | Conversational AI platform for drafting legal agreements, with live preview, saved drafts and PDF export | Next.js, FastAPI, AI, Docker |
+| Kanban Board | Multi-project board with drag-and-drop cards and browser persistence | Next.js, React, TypeScript, Tailwind |
+| Goals App | Goal tracker with JWT auth, frequency-based progress and a demo mode | React, Vite, Node.js, Express, PostgreSQL |
+| Art Gallery | Catalog website for a visual artist, backed by a PostgreSQL REST API | JavaScript, Node.js, Express, PostgreSQL |
+| CV Editor | Résumé builder with live preview and PDF export | React, Vite, Tailwind, Vitest |
 
 ## Tech stack
 

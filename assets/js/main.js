@@ -21,14 +21,6 @@
         });
     });
 
-    /* ── Portfolio cards: open URL from data-url attribute ── */
-    document.querySelectorAll('.portfolio-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const url = btn.dataset.url;
-            if (url) window.open(url, '_blank', 'noopener,noreferrer');
-        });
-    });
-
     /* ── Contact form: Netlify submission with inline feedback ── */
     const form = document.getElementById('contact-form');
     const successMsg = document.getElementById('form-success');

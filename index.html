@@ -85,131 +85,146 @@
         <section id="portfolio">
             <h3 class="section-title">Portfolio</h3>
             <hr />
+            <p class="section-intro">
+                A selection of full-stack and front-end projects, from a trading dashboard with live data
+                streaming to a legal-document drafting platform powered by AI.
+            </p>
             <div class="portfolio-grid">
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://finally-95s4.onrender.com"
-                    aria-label="View FinAlly project (opens in new tab)">
-                    <img src="assets/img/portfolio/finally.png" alt="FinAlly AI Trading Workstation screenshot" loading="lazy" />
-                    <div class="card-info">
-                        <h4>FinAlly</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">AI</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/finally.png" alt="FinAlly AI trading workstation dashboard" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
+                        <h4>FinAlly — AI Trading Workstation</h4>
+                        <p class="project-desc">
+                            A dark, data-dense trading dashboard with live price streaming over Server-Sent Events,
+                            a simulated $10k portfolio with market orders, and portfolio heatmap and P&amp;L charts.
+                            An LLM chat assistant analyzes holdings and can execute trades from natural-language
+                            requests. Packaged as a single Docker container (Next.js static export + FastAPI, SQLite storage).
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">Next.js</li>
+                            <li class="tech-tag">FastAPI</li>
+                            <li class="tech-tag">SSE</li>
+                            <li class="tech-tag">AI / LLM</li>
+                            <li class="tech-tag">Docker</li>
+                        </ul>
+                        <a class="project-link" href="https://finally-95s4.onrender.com" target="_blank" rel="noopener noreferrer">
+                            View live demo <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
+                </article>
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://prelegal-i1vs.onrender.com"
-                    aria-label="View Prelegal project (opens in new tab)">
-                    <img src="assets/img/portfolio/prelegal.png" alt="Prelegal app screenshot" loading="lazy" />
-                    <div class="card-info">
-                        <h4>Prelegal</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">AI</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/prelegal.png" alt="Prelegal legal document drafting app screenshot" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
+                        <h4>Prelegal — AI Legal Drafting</h4>
+                        <p class="project-desc">
+                            A SaaS app for drafting professional legal agreements through a conversation. The AI assistant
+                            identifies the document type (11 templates, including NDAs and cloud service agreements),
+                            gathers the required fields, and fills a live preview as you talk. Users can sign in, save
+                            drafts, reopen them later, and download a PDF. Structured LLM outputs keep the extracted fields reliable.
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">Next.js</li>
+                            <li class="tech-tag">FastAPI</li>
+                            <li class="tech-tag">AI / LLM</li>
+                            <li class="tech-tag">Docker</li>
+                        </ul>
+                        <a class="project-link" href="https://prelegal-i1vs.onrender.com" target="_blank" rel="noopener noreferrer">
+                            View live demo <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
+                </article>
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://kanban-9gdg.onrender.com/"
-                    aria-label="View Kanban Board project (opens in new tab)">
-                    <img src="assets/img/portfolio/kanban.png" alt="Kanban Board app screenshot" loading="lazy" />
-                    <div class="card-info">
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/kanban.png" alt="Kanban board app screenshot" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
                         <h4>Kanban Board</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Tailwind</span>
-                        </div>
+                        <p class="project-desc">
+                            A project board with multiple projects, columns and cards. Cards are reordered with
+                            drag-and-drop (keyboard-accessible via @dnd-kit), and every change is saved in the browser
+                            so boards persist between visits. Includes a demo account so visitors can try it instantly.
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">Next.js</li>
+                            <li class="tech-tag">React</li>
+                            <li class="tech-tag">TypeScript</li>
+                            <li class="tech-tag">Tailwind</li>
+                        </ul>
+                        <a class="project-link" href="https://kanban-9gdg.onrender.com/" target="_blank" rel="noopener noreferrer">
+                            View live demo <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
+                </article>
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://rodrigogoals-app.netlify.app"
-                    aria-label="View Goals App project (opens in new tab)">
-                    <img src="assets/img/portfolio/GoalsApp.png" alt="Goals App screenshot" loading="lazy" />
-                    <div class="card-info">
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/GoalsApp.png" alt="Goals App goal tracker screenshot" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
                         <h4>Goals App</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vite</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">JWT</span>
-                        </div>
+                        <p class="project-desc">
+                            A goal tracker for setting daily, weekly, monthly or yearly targets, logging progress with one
+                            click, and watching a progress bar fill up. Users sign up and log in with JWT-based
+                            authentication; passwords are hashed with bcrypt. The REST API runs on Express with PostgreSQL,
+                            and the backend is covered by Supertest integration tests. A demo mode lets visitors explore
+                            the UI without an account.
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">React</li>
+                            <li class="tech-tag">Vite</li>
+                            <li class="tech-tag">Node.js</li>
+                            <li class="tech-tag">Express</li>
+                            <li class="tech-tag">PostgreSQL</li>
+                            <li class="tech-tag">JWT</li>
+                        </ul>
+                        <a class="project-link" href="https://rodrigogoals-app.netlify.app" target="_blank" rel="noopener noreferrer">
+                            View live demo <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
+                </article>
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://kukobaezartgallery.netlify.app/"
-                    aria-label="View Art Gallery project (opens in new tab)">
-                    <img src="assets/img/portfolio/ArtGallery_screenshot.png" alt="Art Gallery website screenshot" loading="lazy" />
-                    <div class="card-info">
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/ArtGallery_screenshot.png" alt="Art gallery website screenshot" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
                         <h4>Art Gallery</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
+                        <p class="project-desc">
+                            A website for a visual artist to showcase and catalog paintings, drawings and digital
+                            illustration. Visitors browse works by category, open a detail page for each piece with its
+                            technique and description, and can view the commissions page. The catalog is served from a
+                            REST API backed by PostgreSQL, so new works can be added without touching the front end.
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">JavaScript</li>
+                            <li class="tech-tag">Node.js</li>
+                            <li class="tech-tag">Express</li>
+                            <li class="tech-tag">PostgreSQL</li>
+                        </ul>
+                        <a class="project-link" href="https://kukobaezartgallery.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            View live site <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
+                </article>
 
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://letbemeditation.netlify.app/"
-                    aria-label="View Meditation App project (opens in new tab)">
-                    <img src="assets/img/portfolio/MeditationApp.png" alt="Meditation App screenshot" loading="lazy" />
-                    <div class="card-info">
-                        <h4>Meditation App</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vite</span>
-                        </div>
-                    </div>
-                </button>
-
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://react-cv-editor.netlify.app/"
-                    aria-label="View CV Editor project (opens in new tab)">
-                    <img src="assets/img/portfolio/cv-editor.png" alt="CV Editor app screenshot" loading="lazy" />
-                    <div class="card-info">
+                <article class="project-card animate-on-scroll">
+                    <img src="assets/img/portfolio/cv-editor.png" alt="CV editor app screenshot" loading="lazy" width="600" height="340" />
+                    <div class="project-body">
                         <h4>CV Editor</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vite</span>
-                        </div>
+                        <p class="project-desc">
+                            A résumé builder with a form-based editor and a live preview that updates as you type.
+                            Application state is managed with React Context and a reducer, the form fields are reusable
+                            components, and the finished CV can be exported to PDF. Unit tests cover the reducer and
+                            components with Vitest and Testing Library.
+                        </p>
+                        <ul class="card-tech" aria-label="Technologies used">
+                            <li class="tech-tag">React</li>
+                            <li class="tech-tag">Vite</li>
+                            <li class="tech-tag">Tailwind</li>
+                            <li class="tech-tag">Vitest</li>
+                        </ul>
+                        <a class="project-link" href="https://react-cv-editor.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            View live demo <span aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens in new tab)</span>
+                        </a>
                     </div>
-                </button>
-
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://rodrigobaezg.github.io/Notespad/"
-                    aria-label="View NotesPad project (opens in new tab)">
-                    <img src="assets/img/portfolio/notespad_img.png" alt="NotesPad app screenshot" loading="lazy" />
-                    <div class="card-info">
-                        <h4>NotesPad</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Vite</span>
-                        </div>
-                    </div>
-                </button>
-
-                <button class="portfolio-btn animate-on-scroll"
-                    data-url="https://rodrigobaezg.github.io/Tictactoe/"
-                    aria-label="View Tic Tac Toe game project (opens in new tab)">
-                    <img src="assets/img/portfolio/Tictactoe.png" alt="Tic Tac Toe game screenshot" loading="lazy" />
-                    <div class="card-info">
-                        <h4>Tic Tac Toe</h4>
-                        <div class="card-tech">
-                            <span class="tech-tag">React</span>
-                        </div>
-                    </div>
-                </button>
+                </article>
 
             </div>
         </section>

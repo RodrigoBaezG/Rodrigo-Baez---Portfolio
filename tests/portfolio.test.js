@@ -1,74 +1,65 @@
 /**
- * Tests for portfolio card behavior:
- * - clicking a card opens the correct URL (via data-url)
- * - window.open is called with noopener,noreferrer
+ * Tests for the portfolio section, run against the real markup in index.html:
+ * - exactly the expected projects are listed
+ * - every card has a title, a description, tags and a live link
+ * - links open in a new tab with noopener/noreferrer
  */
 
-const PROJECTS = [
-    { name: 'Goals App',      url: 'https://rodrigogoals-app.netlify.app' },
-    { name: 'CV Editor',      url: 'https://react-cv-editor.netlify.app/' },
-    { name: 'Art Gallery',    url: 'https://kukobaezartgallery.netlify.app/' },
-    { name: 'Meditation App', url: 'https://letbemeditation.netlify.app/' },
-    { name: 'Tic Tac Toe',   url: 'https://rodrigobaezg.github.io/Tictactoe/' },
-    { name: 'NotesPad',       url: 'https://rodrigobaezg.github.io/Notespad/' },
+const fs = require('fs');
+const path = require('path');
+
+const EXPECTED_PROJECTS = [
+    { name: 'FinAlly', url: 'https://finally-95s4.onrender.com' },
+    { name: 'Prelegal', url: 'https://prelegal-i1vs.onrender.com' },
+    { name: 'Kanban Board', url: 'https://kanban-9gdg.onrender.com/' },
+    { name: 'Goals App', url: 'https://rodrigogoals-app.netlify.app' },
+    { name: 'Art Gallery', url: 'https://kukobaezartgallery.netlify.app/' },
+    { name: 'CV Editor', url: 'https://react-cv-editor.netlify.app/' },
 ];
 
-function setupDOM() {
-    document.body.innerHTML = `
-        <div class="portfolio-grid">
-            ${PROJECTS.map(p => `
-                <button class="portfolio-btn" data-url="${p.url}" aria-label="View ${p.name}">
-                    <img src="placeholder.png" alt="${p.name}" />
-                    <div class="card-info"><h4>${p.name}</h4></div>
-                </button>
-            `).join('')}
-        </div>
-    `;
+const REMOVED_PROJECTS = ['NotesPad', 'Tic Tac Toe', 'Meditation App'];
 
-    // Attach handlers (mirrors main.js logic)
-    document.querySelectorAll('.portfolio-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const url = btn.dataset.url;
-            if (url) window.open(url, '_blank', 'noopener,noreferrer');
-        });
-    });
+function loadPortfolio() {
+    const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    document.body.innerHTML = doc.getElementById('portfolio').outerHTML;
 }
 
-describe('Portfolio cards', () => {
-    let openSpy;
-
+describe('Portfolio section', () => {
     beforeEach(() => {
-        setupDOM();
-        openSpy = jest.spyOn(window, 'open').mockImplementation(() => null);
+        loadPortfolio();
     });
 
-    afterEach(() => {
-        openSpy.mockRestore();
+    test('renders exactly the 6 current projects', () => {
+        expect(document.querySelectorAll('.project-card')).toHaveLength(EXPECTED_PROJECTS.length);
     });
 
-    test.each(PROJECTS)('clicking "$name" card opens the correct URL', ({ url }) => {
-        const btn = document.querySelector(`[data-url="${url}"]`);
-        btn.click();
-
-        expect(openSpy).toHaveBeenCalledWith(url, '_blank', 'noopener,noreferrer');
-    });
-
-    test('all portfolio cards have a data-url attribute', () => {
-        const cards = document.querySelectorAll('.portfolio-btn');
-        cards.forEach(card => {
-            expect(card.dataset.url).toBeTruthy();
+    test('does not list the removed projects', () => {
+        const titles = [...document.querySelectorAll('.project-card h4')].map(h => h.textContent);
+        REMOVED_PROJECTS.forEach(name => {
+            expect(titles.some(t => t.includes(name))).toBe(false);
         });
     });
 
-    test('all portfolio cards have an aria-label', () => {
-        const cards = document.querySelectorAll('.portfolio-btn');
-        cards.forEach(card => {
-            expect(card.getAttribute('aria-label')).toBeTruthy();
+    test.each(EXPECTED_PROJECTS)('"$name" card links to its live site', ({ url }) => {
+        const link = document.querySelector(`.project-card a[href="${url}"]`);
+        expect(link).not.toBeNull();
+        expect(link.getAttribute('target')).toBe('_blank');
+        expect(link.getAttribute('rel')).toMatch(/noopener/);
+        expect(link.getAttribute('rel')).toMatch(/noreferrer/);
+    });
+
+    test('every card has a title, a detailed description and technology tags', () => {
+        document.querySelectorAll('.project-card').forEach(card => {
+            expect(card.querySelector('h4').textContent.trim()).not.toBe('');
+            expect(card.querySelector('.project-desc').textContent.trim().length).toBeGreaterThan(120);
+            expect(card.querySelectorAll('.tech-tag').length).toBeGreaterThan(0);
         });
     });
 
-    test('renders exactly 6 project cards', () => {
-        const cards = document.querySelectorAll('.portfolio-btn');
-        expect(cards).toHaveLength(6);
+    test('every card image has alt text', () => {
+        document.querySelectorAll('.project-card img').forEach(img => {
+            expect(img.getAttribute('alt').trim()).not.toBe('');
+        });
     });
 });
