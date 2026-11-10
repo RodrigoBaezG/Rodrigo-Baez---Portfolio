@@ -1,3 +1,5 @@
+import cvUrl from './assets/docs/RodrigoBaez_SoftwareD_CV.pdf';
+document.querySelectorAll('[data-cv-link]').forEach((a) => a.setAttribute('href', cvUrl));
 import './assets/js/fixed.js';
 import './assets/js/main.js';
 import './assets/js/modal.js';

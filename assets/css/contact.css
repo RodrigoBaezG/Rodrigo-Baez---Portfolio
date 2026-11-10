@@ -121,3 +121,14 @@
         width: 92%;
     }
 }
+
+.contact-email {
+    margin: -1rem 0 2rem;
+    text-align: center;
+    color: var(--gray3);
+}
+
+.contact-email a {
+    color: var(--primary-dark);
+    font-weight: 600;
+}

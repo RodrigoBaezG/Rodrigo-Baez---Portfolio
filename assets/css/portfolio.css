@@ -6,7 +6,17 @@
     text-align: center;
     font-size: 1rem;
     line-height: 1.7;
-    color: var(--gray2);
+    color: var(--gray3);
+}
+
+.section-note {
+    max-width: 680px;
+    margin: -1.5rem auto 2.5rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--gray3);
 }
 
 /* ── Portfolio grid ── */
@@ -123,4 +133,28 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* ── Project links (live demo + source code) ── */
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+}
+
+.project-links .project-link {
+    margin-top: 0;
+}
+
+.project-link-secondary {
+    border-color: var(--gray3);
+    color: var(--gray2);
+}
+
+.project-link-secondary:hover,
+.project-link-secondary:focus-visible {
+    background: var(--gray2);
+    border-color: var(--gray2);
+    color: var(--black2);
 }

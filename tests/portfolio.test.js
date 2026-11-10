@@ -9,12 +9,12 @@ const fs = require('fs');
 const path = require('path');
 
 const EXPECTED_PROJECTS = [
-    { name: 'FinAlly', url: 'https://finally-95s4.onrender.com' },
-    { name: 'Prelegal', url: 'https://prelegal-i1vs.onrender.com' },
-    { name: 'Kanban Board', url: 'https://kanban-9gdg.onrender.com/' },
-    { name: 'Goals App', url: 'https://rodrigogoals-app.netlify.app' },
-    { name: 'Art Gallery', url: 'https://kukobaezartgallery.netlify.app/' },
-    { name: 'CV Editor', url: 'https://react-cv-editor.netlify.app/' },
+    { name: 'FinAlly', url: 'https://finally-95s4.onrender.com', repo: 'https://github.com/RodrigoBaezG/finally' },
+    { name: 'Prelegal', url: 'https://prelegal-i1vs.onrender.com', repo: 'https://github.com/RodrigoBaezG/Prelegal' },
+    { name: 'Kanban Board', url: 'https://kanban-9gdg.onrender.com/', repo: 'https://github.com/RodrigoBaezG/kanban' },
+    { name: 'Goals App', url: 'https://rodrigogoals-app.netlify.app', repo: 'https://github.com/RodrigoBaezG/Goalsapp' },
+    { name: 'Art Gallery', url: 'https://kukobaezartgallery.netlify.app/', repo: 'https://github.com/RodrigoBaezG/ArtGallery' },
+    { name: 'CV Editor', url: 'https://react-cv-editor.netlify.app/', repo: 'https://github.com/RodrigoBaezG/react-cv-editor' },
 ];
 
 const REMOVED_PROJECTS = ['NotesPad', 'Tic Tac Toe', 'Meditation App'];
@@ -61,5 +61,12 @@ describe('Portfolio section', () => {
         document.querySelectorAll('.project-card img').forEach(img => {
             expect(img.getAttribute('alt').trim()).not.toBe('');
         });
+    });
+
+    test.each(EXPECTED_PROJECTS)('"$name" card links to its source code', ({ repo }) => {
+        const link = document.querySelector(`.project-card a[href="${repo}"]`);
+        expect(link).not.toBeNull();
+        expect(link.textContent).toMatch(/Source code/);
+        expect(link.getAttribute('rel')).toMatch(/noopener/);
     });
 });

@@ -1,4 +1,4 @@
-# Rodrigo Baez Garcia — Portfolio
+# Rodrigo Báez García — Portfolio
 
 Personal portfolio site showcasing my work as a software developer. Built as a hand-crafted single-page site with vanilla JavaScript, CSS, and a Webpack build pipeline — designed for fast loads, accessibility, and a clean visual identity.
 

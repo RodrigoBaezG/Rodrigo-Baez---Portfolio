@@ -1,0 +1,49 @@
+/* ── About ── */
+.about-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.about-content p {
+    margin: 0 0 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.about-cv {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.about-cols {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2.5rem auto 0;
+    padding: 0 1.5rem;
+}
+
+.about-cols h4 {
+    margin: 0 0 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about-cols ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.about-cols li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    color: var(--black);
+}
