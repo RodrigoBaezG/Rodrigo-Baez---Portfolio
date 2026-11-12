@@ -15,6 +15,18 @@ Live: hosted on Netlify.
 | Art Gallery | Catalog website for a visual artist, backed by a PostgreSQL REST API | JavaScript, Node.js, Express, PostgreSQL |
 | CV Editor | Résumé builder with live preview and PDF export | React, Vite, Tailwind, Vitest |
 
+## Digital twin (AI chat)
+
+Visitors can chat with an AI "digital twin" that answers questions about my career, skills and projects — always in English. Open it from the floating **Ask my digital twin** button or the hero CTA.
+
+- **Frontend**: `assets/js/twin.js` + `assets/css/twin.css` (markup at the end of `index.html`).
+- **Backend**: Netlify Function `netlify/functions/chat.js` proxies to [OpenRouter](https://openrouter.ai) so the API key never reaches the browser. Model: `google/gemma-4-31b-it:free`, with free fallbacks.
+- **Knowledge**: `netlify/lib/twin-knowledge.js` holds the system prompt and facts — update it whenever projects or experience change.
+
+**Local development**: put `OPENROUTER_API_KEY=...` in `.env` (git-ignored) and run `npx netlify-cli dev`, which serves the site *and* the function. Plain `npm start` does not run the function.
+
+**Deploy**: in Netlify → Site configuration → Environment variables, add `OPENROUTER_API_KEY`.
+
 ## Tech stack
 
 - **Frontend**: HTML5, CSS3, vanilla JavaScript (ES modules)

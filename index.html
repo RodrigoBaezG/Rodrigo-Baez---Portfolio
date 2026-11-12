@@ -55,6 +55,7 @@
         <h2 class="hero-subtitle">Junior software developer · open to opportunities</h2>
         <a href="#portfolio" class="hero-cta">View my projects</a>
         <a href="assets/docs/RodrigoBaez_SoftwareD_CV.pdf" class="hero-cta hero-cta-secondary" data-cv-link download>Download CV</a>
+        <a href="#twin-panel" class="hero-cta hero-cta-secondary" data-twin-open>Chat with my digital twin</a>
         <div class="scroll-indicator" aria-hidden="true">
             <span class="scroll-arrow">&#8595;</span>
         </div>
@@ -403,6 +404,36 @@
             <small>&copy; 2026 · All rights reserved</small>
         </div>
     </footer>
+
+    <!-- Digital twin chat -->
+    <button id="twin-toggle" class="twin-toggle" aria-expanded="false" aria-controls="twin-panel">
+        <span aria-hidden="true">&#128172;</span> Ask my digital twin
+    </button>
+    <div id="twin-panel" class="twin-panel" role="dialog" aria-labelledby="twin-title" hidden>
+        <div class="twin-header">
+            <div>
+                <h3 id="twin-title">Rodrigo's digital twin</h3>
+                <p>Ask me about my career, skills and projects.</p>
+            </div>
+            <button id="twin-close" class="twin-close" aria-label="Close chat">&times;</button>
+        </div>
+        <div id="twin-log" class="twin-log" aria-live="polite">
+            <div class="twin-msg twin-msg-assistant">
+                Hi! I'm Rodrigo's AI digital twin. Ask me anything about his experience, tech stack or the projects in this portfolio.
+            </div>
+        </div>
+        <div class="twin-chips">
+            <button type="button" class="twin-chip">What projects have you built with AI?</button>
+            <button type="button" class="twin-chip">What is your tech stack?</button>
+            <button type="button" class="twin-chip">Tell me about your experience</button>
+        </div>
+        <form id="twin-form" class="twin-form">
+            <label for="twin-input" class="visually-hidden">Your question</label>
+            <input id="twin-input" type="text" maxlength="1000" autocomplete="off" placeholder="Type your question..." required />
+            <button type="submit">Send</button>
+        </form>
+        <p class="twin-disclaimer">AI-generated answers may be inaccurate.</p>
+    </div>
 
 </body>
 
